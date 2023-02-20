@@ -82,6 +82,8 @@ int main() {
 	
 		mIO.window.display();
 	}	
-
+	if (mBoard.IsGameOver()) {
+		std::cout << "game over." << std::endl;
+	}
 	return 0;
 }

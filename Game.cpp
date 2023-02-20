@@ -11,7 +11,6 @@ Game::Game (Board* pBoard, Pieces* pPieces, IO* pIO, int pScreenHeight) {
 }
 
 int Game::getRand(int pA, int pB) {
-	srand(time(0));
     return pA + int(rand() % (pB - pA));
 }
 
@@ -24,6 +23,8 @@ void Game::initGame() {
     mNextRotation = 0;
     mNextPosX = BOARD_WIDTH/2 + 5;
     mNextPosY = 0;
+
+	srand(time(0));
 }
 
 void Game::CreateNewPiece() {

@@ -31,7 +31,7 @@ void Board::StorePiece(int pX, int pY, int pPiece, int pRotation) {
 bool Board::IsGameOver() {
 	for (int i = 0; i < BOARD_WIDTH; i++) {
         if (mBoard[i][0] == POS_FILLED) {
-            std::cout << "game over." << std::endl;
+//            std::cout << "game over." << std::endl;
 //			printBoard();
 			return true;
         }
