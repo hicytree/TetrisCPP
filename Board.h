@@ -3,9 +3,9 @@
 
 #include "Pieces.h"
 
-#define BOARD_LINE_WIDTH 6 // Width of each of the two lines that delimit the board
-#define BLOCK_SIZE 16 // Width and Height of each block of a piece
-#define BOARD_POSITION 320 // Center position of the board from the left of the screen
+#define BOARD_LINE_WIDTH 19 // Width of each of the two lines that delimit the board
+#define BLOCK_SIZE 35 // Width and Height of each block of a piece
+#define BOARD_POSITION 195 // Center position of the board from the left of the screen
 #define BOARD_WIDTH 10 // Board width in blocks
 #define BOARD_HEIGHT 20 // Board height in blocks
 #define MIN_VERTICAL_MARGIN 20 // Minimum vertical margin for the board limit
@@ -30,6 +30,7 @@ class Board {
 
         void InitBoard();
         void DeleteLine (int pY);
+		void printBoard();
 };
 
 #endif

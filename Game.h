@@ -24,7 +24,7 @@ class Game {
 
         Board* mBoard;
         Pieces* mPieces;
-        IO* mIO;
+		IO* mIO;
 
         int getRand(int pA, int pB);
         void initGame();
